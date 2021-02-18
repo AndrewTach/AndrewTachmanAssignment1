@@ -73,7 +73,7 @@ def play_game(player_functions, should_display=False, start_player=0):
 		player_id = (player_id + 1) % 2
 		curr_game_state = game_state(board)
 
-	if should_display == True:	
+	if should_display == True:
 		if curr_game_state == DRAW:
 			print("Draw")
 		else:
@@ -93,7 +93,7 @@ def human_player(player_id, board):
 	row = get_number("Which row? ")
 	column = get_number("Which column? ")
 	return row * 3 + column
-	
+
 def run_simulations(player_functions, num_games, x_always_starts=False):
 	outcomes = [0] * 3
 
@@ -105,3 +105,5 @@ def run_simulations(player_functions, num_games, x_always_starts=False):
 		outcomes[outcome] += 1
 
 	return outcomes[0], outcomes[1], outcomes[2]
+
+play_game([human_player, human_player], should_display=True, start_player=0)
