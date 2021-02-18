@@ -1,0 +1,7 @@
+import tictactoe
+
+# player functions take two parameters
+# player_id which is 0 (X) or 1 (O)
+
+# First, find all the open spots
+# Then, choose a random one to play in
