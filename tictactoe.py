@@ -1,4 +1,4 @@
-import random 
+import random
 
 player_strings = ["X", "O", " "]
 possible_win_combinations = [
@@ -105,5 +105,3 @@ def run_simulations(player_functions, num_games, x_always_starts=False):
 		outcomes[outcome] += 1
 
 	return outcomes[0], outcomes[1], outcomes[2]
-
-play_game([human_player, human_player], should_display=True, start_player=0)
